@@ -22,6 +22,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   
+  
 }
 .logo {
   font-family: raleway;
@@ -109,8 +110,8 @@ img {
 }
 .filter .item {
     margin: 0;
-    margin-bottom: 54px;
-    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-right: 8px;
 }
 .filter .item:last-child {
   margin-right: 0;
@@ -122,7 +123,7 @@ img {
   color: var(--primary-bg-color);
 }
 .line {
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #ECECEC;
 }
 .main-nav {
   display: flex;
@@ -139,8 +140,8 @@ img {
 .site-nav .link {
   display: block;
   color: #212121;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -168,11 +169,9 @@ margin-left: auto;
   color: #2196f3;
 }
 .mail {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-.tel {
-  padding-bottom: 60px;
-}
+
 .contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -188,12 +187,13 @@ margin-left: auto;
 .hero {
   background-color: var(--accent-bg-color);
   text-align: center;
-  margin-bottom: 94px;
+  
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 200px;
   color: var(--primary-bg-color);
   font-style: normal;
   font-weight: 900;
@@ -203,9 +203,15 @@ margin-left: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
+.btn {
+  padding-bottom: 200px;
+}
+.hero-button { 
+
   margin-left: auto;
   margin-right: auto;
+  
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   font-style: normal;
@@ -223,6 +229,12 @@ margin-left: auto;
  }
  .team-section {
    display: flex;
+   
+   
+ }
+ .team {
+   padding-top: 94px;
+   padding-bottom: 94px;
  }
  .team-card {
    margin-right: 30px;
@@ -231,9 +243,9 @@ margin-left: auto;
    margin-right: 0;
  }
 .team-section-title {
-  margin-top: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  
+  margin: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 700;
@@ -267,9 +279,11 @@ margin-left: auto;
 }
 .section,
 .works {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
-
+.section{
+  padding-top: 94px;
+}
 .section-title {
   padding: 0;
   margin: 0;
@@ -284,6 +298,23 @@ margin-left: auto;
 }
 .section-list {
   display: flex;
+}
+.text {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.feature {
+  width: 270px;
+  margin-right: 30px;
+  justify-content: space-between ;
+}
+.feature:last-child {
+  margin-right: 0;
 }
 .primary-section-title {
   margin-top: 0;
@@ -309,36 +340,11 @@ margin-left: auto;
   margin-right: 30px;
   flex-basis: calc((100%-60px) / 3);
 }
-.group-item {
-  border: 1px solid  #757575;
-}
-
-.text {
-  margin: 0;
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.feature {
-  width: 270px;
-  margin-right: 30px;
-  justify-content: space-between ;
-}
-.feature:last-child {
-  margin-right: 0;
-}
 
 
-footer {
-  background-color: var(--accent-bg-color);
-}
-.logo-footer {
-  margin: 0;
-  padding-top: 60px;
-  padding-bottom: 20px;
+
+
+
 }
 .portfolio {
   margin-top: 94px;
@@ -347,8 +353,8 @@ footer {
 
 .portfolio {
   margin: 0;
-  margin-bottom: 122px;
-  margin-top: 66px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 
@@ -389,6 +395,10 @@ footer {
   margin-bottom: 30px;
   
 }
+.group-item {
+  border: 1px solid  #EEEEEE;
+}
+
 .group:nth-child(3n) {
  margin-right: 0;
 }
@@ -397,7 +407,7 @@ footer {
 }
 .address-title {
   margin: 0;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   color: var(--primary-bg-color);
   font-style: normal;
   font-weight: 400;
@@ -405,3 +415,11 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--accent-bg-color);
+}
+.logo-footer {
+  margin-bottom: 20px;
