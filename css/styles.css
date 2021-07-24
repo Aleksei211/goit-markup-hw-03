@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -94,28 +93,7 @@ img {
  height: auto;
 }
 
-.portfolio-buttons {
-  padding: 6px 22px;
 
-  font-family: Roboto;
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background: #F5F4FA;
-  border-radius: 4px;
-}
-.filter .item {
-    margin: 0;
-    margin-bottom: 50px;
-    margin-right: 8px;
-}
-.filter .item:last-child {
-  margin-right: 0;
-}
 
 .portfolio-buttons:hover,
 .portfolio-buttons:focus {
@@ -168,17 +146,20 @@ margin-left: auto;
 .contacts:focus {
   color: #2196f3;
 }
-.mail {
-  margin-bottom: 9px;
-}
+
 
 .contacts {
+  display: block;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.contacts:last-child {
+  margin-bottom: 0;
 }
 .header-contacts:hover,
 .header-contacts:focus {
@@ -187,13 +168,14 @@ margin-left: auto;
 .hero {
   background-color: var(--accent-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
   color: var(--primary-bg-color);
   font-style: normal;
   font-weight: 900;
@@ -203,9 +185,7 @@ margin-left: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.btn {
-  padding-bottom: 200px;
-}
+
 .hero-button { 
 
   margin-left: auto;
@@ -256,8 +236,8 @@ margin-left: auto;
 }
 .team-names {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -266,9 +246,13 @@ margin-left: auto;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .specialies {
   margin: 0;
-  padding-bottom: 30px;
+  
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 400;
@@ -350,7 +334,28 @@ margin-left: auto;
   margin-top: 94px;
   margin-bottom: 94px;
 }
+.portfolio-buttons {
+  padding: 6px 22px;
 
+  font-family: Roboto;
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+.filter .item {
+    margin: 0;
+    margin-bottom: 50px;
+    margin-right: 8px;
+}
+.filter .item:last-child {
+  margin-right: 0;
+}
 .portfolio {
   margin: 0;
   padding-bottom: 94px;
@@ -359,9 +364,7 @@ margin-left: auto;
 
 
 .portfolio-title {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 20px;
+  margin: 0;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-style: normal;
@@ -372,10 +375,7 @@ margin-left: auto;
 }
 
 .section-text-portfolio {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 400;
@@ -397,6 +397,10 @@ margin-left: auto;
 }
 .group-item {
   border: 1px solid  #EEEEEE;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .group:nth-child(3n) {
@@ -412,7 +416,7 @@ margin-left: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
